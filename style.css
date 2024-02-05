@@ -25,6 +25,7 @@
   color: white;
   opacity: .5;
   background-color: rgb(193, 142, 77);
+  z-index: 100;
 }
 
 .general_title {
@@ -50,6 +51,37 @@ li span {
   font-weight: 400;
   text-indent: 30px;
   background-color: rgba(85, 255, 0, 0.42);
+}
+
+.nav_menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15%;
+  height: 100vh;
+  background-color: #d3d3d38b;
+}
+
+.menu_list {
+  list-style-type: none;
+}
+
+.menu_item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px dashed gray;
+  text-align: center;
+}
+
+.menu_item:first-child {
+  margin-top: 100px;
+}
+
+.menu_link {
+  font-size: 22px;
+  text-decoration: none;
+  color: black;
 }
 
 @media (max-width: 650px) {
